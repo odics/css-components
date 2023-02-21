@@ -8,11 +8,24 @@
 
 }
 
-.container {
-  padding: 2rem;
+.card-container {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #708f7c;
+}
+
+.main-container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 1rem;
 }
 
 body {
@@ -26,11 +39,14 @@ body {
   align-items: center;
   border-bottom: 2px solid;
   border-color: #e56b6f21;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .logo {
   font-family: 'Quicksand', sans-serif;
-  padding: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
@@ -62,9 +78,8 @@ body {
 }
 
 .shopping-cart {
+  display: flex;
   color: #e56b6f;
-  position: absolute;
-  right: 20px;
 }
 
 .search {
@@ -93,6 +108,7 @@ body {
   font-weight: 500;
   font-size: 0.7rem;
   text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .search-button:hover {
@@ -105,7 +121,40 @@ body {
   background-color: #FAE1DD;
   border: 1px solid;
   border-color: #FEC89A;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 1rem;
+}
+
+.home-menu {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #FAE1DD;
+  border: 1px solid;
+  border-color: #FEC89A;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 1rem;
+}
+
+.home-menu div {
+  display: grid;
+}
+
+.home-menu input {
+  height: auto;
+  margin: 0;
+}
+
+.home-menu select {
+  background-color: #E8E8E4;
+  border: 1px solid;
+  border-color: #e56b6f;
   border-radius: 4px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem;
 }
 
 .card .card-title {
@@ -118,12 +167,13 @@ body {
   padding-top: 0;
   margin-top: 0.8rem;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .card .card-body {
   padding: 0.5rem;
   padding-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -141,6 +191,7 @@ body {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card .card-body button:hover {
@@ -163,11 +214,32 @@ body {
 .card .recipe-info .pill {
   border: 1px solid;
   border-radius: 5px;
-  border-color: #7d8083;
-  padding: 3px; 
+  border-color: #7d808340;
+  padding: 3px;
   font-family: 'Lucida Sans', sans-serif;
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #7d8083;
   background-color: #ECE4DB;
+}
+
+.primary-button {
+  font-family: 'Oxygen', sans-serif;
+  border: 1px solid;
+  border-color: #e56b6f;
+  background-color: #FCD5CE;
+  padding: 10px 0.5rem;
+  border-radius: 4px;
+  color: #e56b6f;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.5s;  
+}
+
+.primary-button:hover {
+  background-color: #D8E2DC;
+  cursor: pointer;
 }
