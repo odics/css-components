@@ -8,6 +8,13 @@
 
 }
 
+.container {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 body {
   background-color: #d8e2dc;
 }
@@ -33,7 +40,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .nav-links li {
@@ -49,13 +56,118 @@ body {
 }
 
 .nav-links li:hover {
-  border-top: 3px solid; 
-  margin-top: -3px; 
-  cursor: pointer; 
+  border-top: 3px solid;
+  margin-top: -3px;
+  cursor: pointer;
 }
 
 .shopping-cart {
   color: #e56b6f;
   position: absolute;
-  right: 20px; 
+  right: 20px;
+}
+
+.search {
+  display: flex;
+}
+
+.text-input {
+  background-color: #E8E8E4;
+  border: 1px solid;
+  border-color: #e56b6f;
+  border-radius: 4px;
+  height: 25px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search-button {
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid;
+  border-color: #e56b6f;
+  background-color: #FCD5CE;
+  padding: 3px 0.5rem;
+  border-radius: 4px;
+  color: #e56b6f;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.search-button:hover {
+  background-color: #D8E2DC;
+  cursor: pointer;
+}
+
+.card {
+  display: grid;
+  background-color: #FAE1DD;
+  border: 1px solid;
+  border-color: #FEC89A;
+  border-radius: 4px;
+}
+
+.card .card-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #ff686b;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.card .card-body {
+  padding: 0.5rem;
+  padding-top: 0;
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card .card-body button {
+  font-family: 'Oxygen', sans-serif;
+  border: 1px solid;
+  border-color: #e56b6f;
+  background-color: #FCD5CE;
+  padding: 3px 0.5rem;
+  border-radius: 4px;
+  color: #e56b6f;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card .card-body button:hover {
+  background-color: #D8E2DC;
+  cursor: pointer;
+}
+
+.card .recipe-info {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #e56b6f4f;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.card .recipe-info .pill {
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #7d8083;
+  padding: 3px; 
+  font-family: 'Lucida Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #7d8083;
+  background-color: #ECE4DB;
 }
