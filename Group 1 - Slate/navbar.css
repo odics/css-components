@@ -1,0 +1,252 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #343A40;
+}
+
+.main-container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 1rem;
+}
+
+body {
+  background-color: #8e9aaf;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: fit-content(100px) 1fr 1fr fit-content(100px);
+  background-color: #ADB5BD;
+  align-items: center;
+  border-bottom: 2px solid;
+  border-color: #ADB5BD;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.logo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  color: #606e7c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  color: #6C757D;
+}
+
+.nav-links li:hover {
+  border-top: 3px solid;
+  margin-top: -3px;
+  cursor: pointer;
+}
+
+.shopping-cart {
+  display: flex;
+  color: #6C757D;
+}
+
+.search {
+  display: flex;
+}
+
+.text-input {
+  background-color: #dee2ff;
+  border: 1px solid;
+  border-color: #E9ECEF;
+  border-radius: 4px;
+  height: 25px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  color: #6C757D;
+}
+
+.search-button {
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid;
+  border-color: #E9ECEF;
+  background-color: #CED4DA;
+  padding: 3px 0.5rem;
+  border-radius: 4px;
+  color: #6C757D;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.search-button:hover {
+  background-color: #343A40;
+  cursor: pointer;
+}
+
+.card {
+  display: grid;
+  background-color: #cbc0d3;
+  border: 1px solid;
+  border-color: #efd3d7;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #ADB5BD;
+}
+
+.home-menu {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #cbc0d3;
+  border: 1px solid;
+  border-color: #feeafa;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 1rem;
+}
+
+.home-menu div {
+  display: grid;
+}
+
+.home-menu input {
+  height: auto;
+  margin: 0;
+}
+
+.home-menu select {
+  background-color: #ADB5BD;
+  border: 1px solid;
+  border-color: #E9ECEF;
+  border-radius: 4px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem;
+}
+
+.card .card-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #495057;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.card .card-body {
+  padding: 0.5rem;
+  padding-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card .card-body button {
+  font-family: 'Oxygen', sans-serif;
+  border: 1px solid;
+  border-color: #E9ECEF;
+  background-color: #4950574d;
+  padding: 3px 0.5rem;
+  border-radius: 4px;
+  color: #343A40;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.2s; 
+}
+
+.card .card-body button:hover {
+  background-color: #8e9aaf;
+  cursor: pointer;
+}
+
+.card .recipe-info {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #e56b6f4f;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.card .recipe-info .pill {
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8e9aaf;
+  padding: 3px;
+  font-family: 'Lucida Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #7d8083;
+  background-color: #dee2ff;
+}
+
+.primary-button {
+  font-family: 'Oxygen', sans-serif;
+  border: 1px solid;
+  border-color: #cbc0d3;
+  background-color: #8e9aaf;
+  padding: 10px 0.5rem;
+  border-radius: 4px;
+  color: #495057;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.5s;  
+}
+
+.primary-button:hover {
+  background-color: #343A40;
+  color: #feeafa;
+  cursor: pointer;
+}
