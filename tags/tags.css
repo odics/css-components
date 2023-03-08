@@ -1,0 +1,31 @@
+li {
+  display: inline-block;
+  list-style: none;
+  border: 1px solid;
+  width: fit-content;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: fit-content;
+  padding: 10px;
+}
+
+.container input {
+  height: 30px;
+  border: 0;
+}
+
+.container input:focus {
+  border: 0;
+  outline: 0;
+}
