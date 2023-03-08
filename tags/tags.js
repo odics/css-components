@@ -1,7 +1,7 @@
 var add_button = document.getElementById("add_tag");
 var delete_button = document.getElementsByClassName("delete_tag");
 var tag_lister = document.getElementById("list_all_tags");
-var all_tags = document.getElementsByClassName("tag-text");
+var all_tags = document.querySelector(".tag-text");
 var input_text_key_press = document.getElementById("new_tag");
 
 input_text_key_press.onkeyup = function() {
@@ -13,13 +13,19 @@ input_text_key_press.onkeyup = function() {
     
     tag_to_add.appendChild(text_to_add);
     tag_list.appendChild(tag_to_add);
-    tag_to_add.innerHTML = tag_input.value + " <span class='delete_tag' onclick='delete_tag(this)'>&times;</span>";
+    tag_to_add.innerHTML = "<span class='tag-text'>" + tag_input.value + '</span' + " <span class='delete_tag' onclick='delete_tag(this)'>&times;</span>";
     tag_input.value = ""
   }
 }
 
 tag_lister.onclick = function() {
-  console.log(all_tags[0].textContent);
+	var all_tags = document.querySelectorAll(".tag-text");
+  
+  for (i = 0; i < all_tags.length; i++) {
+  console.log(all_tags[i].textContent);
+  }
+  
+  // console.log(all_tags);
 }
 
 function delete_tag(tag_to_delete) {
